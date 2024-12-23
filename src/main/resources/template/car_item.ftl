@@ -20,7 +20,9 @@
         <a href="/semWork/return?car=${car.id}&name=${car.name}" class="button">Возврат арендованной машины</a>
     <#else>
         <#if forRent = "true" && user.role = "customer">
+            <#if car.isAvailable()?c = "true">
             <a href="/semWork/buy?car=${car.id}&name=${car.name}" class="button">Купить</a>
+            </#if>
             <a href="/semWork/rent?car=${car.id}&name=${car.name}" class="button">Арендовать</a>
         </#if>
     </#if>
