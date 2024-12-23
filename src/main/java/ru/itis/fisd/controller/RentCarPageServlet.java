@@ -32,7 +32,7 @@ public class RentCarPageServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) {
         try {
-
+            request.setAttribute("error", "no error");
             request.setAttribute("id", request.getParameter("car"));
             request.setAttribute("name", request.getParameter("name"));
 
@@ -82,10 +82,11 @@ public class RentCarPageServlet extends HttpServlet {
                 car.setAvailable(false);
                 carService.update(car);
             } else {
-                logger.info("RENT IS NOT AVAILABLE");
+                request.setAttribute("error", "RENT IS NOT AVAILABLE");
+                request.getRequestDispatcher("/rent_car.ftl").forward(request, response);
             }
             response.sendRedirect(request.getContextPath() + "/main");
-        } catch (IOException e) {
+        } catch (IOException | ServletException e) {
             throw new RuntimeException(e);
         }
     }
