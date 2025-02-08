@@ -1,0 +1,247 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+
+    background-color: #121212;
+    color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navigation ul{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 50px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.full-width-img {
+    width: 100vw;
+    height: calc(100vh - 50px);
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.container, .login-container, .registration-container, .form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+h2, h1, p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+input[type="text"], input[type="password"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+.form-footer {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.form-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+.car_item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.car_item h1 {
+    font-size: 2em;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+.car_item ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.car_item li {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.car_item .button, .container .button, button, .form-section .button {
+    display: inline-block;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #111111;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.container .cars table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.container .cars tr {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container .cars td {
+    width: 100%;
+    padding: 30px 70px;
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.container .cars td a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.footer .cars a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    border-radius: 4px;
+    border: 1px solid #0056b3;
+    display: inline-block;
+}
+
+.pay {
+    display: block; /* Убедимся, что каждый элемент занимает всю ширину строки */
+    margin: 10px 0; /* Добавим отступы сверху и снизу для равномерного разделения */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+/*.pay strong {*/
+/*    color: #fff; !* Оставим текст счета читаемым *!*/
+/*}*/
+
+form.pay {
+    width: 100%; /* Убедимся, что форма занимает доступную ширину */
+    max-width: 400px; /* Ограничим максимальную ширину */
+    margin: 0 auto; /* Центрируем форму */
+}
+
+.pay input[type="number"] {
+    width: 100%; /* Поле ввода занимает всю ширину формы */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #111;
+    background-color: #fff;
+}
+
+/*.pay button {*/
+/*    width: 100%; !* Кнопка занимает всю ширину *!*/
+/*    padding: 10px;*/
+/*    font-size: 16px;*/
+/*    background-color: #007BFF;*/
+/*    color: #fff;*/
+/*    border: none;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*    font-weight: bold;*/
+/*    text-align: center;*/
+/*    transition: background-color 0.3s ease;*/
+/*}*/
