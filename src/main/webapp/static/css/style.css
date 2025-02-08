@@ -31,7 +31,6 @@ html, body {
 li {
     float: left;
 }
-
 li a {
     display: block;
     color: white;
@@ -207,23 +206,20 @@ input[type="text"], input[type="password"], input[type="number"], select {
 }
 
 .pay {
-    display: block; /* Убедимся, что каждый элемент занимает всю ширину строки */
-    margin: 10px 0; /* Добавим отступы сверху и снизу для равномерного разделения */
-    text-align: left; /* Выравнивание текста по левому краю */
+    display: block;
+    margin: 10px 0;
+    text-align: left;
 }
 
-/*.pay strong {*/
-/*    color: #fff; !* Оставим текст счета читаемым *!*/
-/*}*/
 
 form.pay {
-    width: 100%; /* Убедимся, что форма занимает доступную ширину */
-    max-width: 400px; /* Ограничим максимальную ширину */
-    margin: 0 auto; /* Центрируем форму */
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .pay input[type="number"] {
-    width: 100%; /* Поле ввода занимает всю ширину формы */
+    width: 100%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #333;
@@ -231,17 +227,3 @@ form.pay {
     color: #111;
     background-color: #fff;
 }
-
-/*.pay button {*/
-/*    width: 100%; !* Кнопка занимает всю ширину *!*/
-/*    padding: 10px;*/
-/*    font-size: 16px;*/
-/*    background-color: #007BFF;*/
-/*    color: #fff;*/
-/*    border: none;*/
-/*    border-radius: 4px;*/
-/*    cursor: pointer;*/
-/*    font-weight: bold;*/
-/*    text-align: center;*/
-/*    transition: background-color 0.3s ease;*/
-/*}*/
